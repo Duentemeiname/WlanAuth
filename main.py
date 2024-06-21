@@ -5,8 +5,8 @@ from keycloakapi import *
 app = Flask(__name__)
 
 UNIFI_API_ENDPOINT = 'https://gateway.local.duentetech.de:443'
-UNIFI_API_USERNAME = 'DUENTETECH-API'
-UNIFI_API_PASSWORD = 'amount-showgirl-ability'
+UNIFI_API_USERNAME = 'XXX'
+UNIFI_API_PASSWORD = 'XXX'
 UNFIF_API_SITE = 'Gateway%20-%20Dream%20Machine%20Pro'
 
 
@@ -18,7 +18,7 @@ def get_example():
     if session:
         #Get User Device MAC Address
         #Redrirct to Keycloak
-        if (authorize_user(session, UNIFI_API_ENDPOINT, UNFIF_API_SITE, '38:8a:06:bc:51:98', 100)):
+        if (authorize_user(session, UNIFI_API_ENDPOINT, UNFIF_API_SITE, 'xxx', 100)):
             data = {
                 'message': 'User Login Successfull',
                 'status': 'success'
